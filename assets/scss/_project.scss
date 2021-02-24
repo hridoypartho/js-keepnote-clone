@@ -1,8 +1,90 @@
- .project{
-    background: $black;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    text-align: center;
+.header {
+    padding: 30px 30px;
+    background-color: rgb(240, 240, 47);
+
+    &__title {
+        h2 {
+            color: $black;
+            font-size: 32px !important;
+        }
+    }
+}
+
+.button {
+    padding-top: 30px;
+    position: fixed;
+    right: 50px;
+
+    &__content {
+        &_btn {
+            display: flex;
+            align-items: center;
+            color: $black;
+            font-weight: 500;
+            font-size: 18px;
+            span{
+                margin-right: 20px;
+                background-color: yellow;
+                width: 50px;
+                height: 50px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 100%;
+            }
+        }
+    }
+}
+
+.project{
+    padding: 30px 30px;
+    margin-top: 100px;
+    &__content{
+        width: 400px;
+        height: 200px;
+        overflow-y: scroll;
+        background: white;
+        box-shadow: 0px 6px 15px rgba(201, 193, 194, 0.36);
+        border-radius: 5px;
+        &_button{
+            display: flex;
+            justify-content: flex-end;
+            a{
+                margin-right: 20px;
+                margin-top: 10px;
+            }
+            .edit{
+                color: white;
+                background-color: yellowgreen;
+                width: 40px;
+                height: 40px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 100%;
+                transition: .3s;
+                &:hover{
+                    color: yellowgreen;
+                    background: white;
+                    box-shadow: 0px 6px 15px rgba(201, 193, 194, 0.36);
+                }
+            }
+            .delete{
+                color: white;
+                background-color: red;
+                width: 40px;
+                height: 40px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 100%;
+                transition: .3s;
+                &:hover{
+                    color: red;
+                    background: white;
+                    box-shadow: 0px 6px 15px rgba(201, 193, 194, 0.36);
+                }
+            }
+        }
+    }
 }
