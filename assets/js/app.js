@@ -38,6 +38,7 @@ const addNewnote = ( text = '') => {
     const  textArea =  note.querySelector('textarea');
     delButton.addEventListener('click', () =>{
         note.remove();
+        updateLSData();
     });
 
     textArea.value = text;
